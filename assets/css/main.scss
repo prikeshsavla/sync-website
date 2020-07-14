@@ -1,0 +1,10 @@
+@import "font";
+@import "variables";
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "global";
+@import "_widgets/init";
+
+@import "_pages/init";
