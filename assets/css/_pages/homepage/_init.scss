@@ -1,15 +1,19 @@
-.homepage{
-  section{
-    padding:80px 15px 40px;
+.homepage {
+  section {
+    padding: 40px 15px 20px;
+
+    @include media-breakpoint-up(md) {
+      padding: 80px 15px 40px;
+    }
   }
-  .media{
-    
-    .media-body{
+
+  .media {
+    .media-body {
       font-size: 22px;
     }
   }
-  
-  .sync-hr{
+
+  .sync-hr {
     width: 150px;
   }
 }
