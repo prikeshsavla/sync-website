@@ -1,4 +1,22 @@
 .faq {
+  .faq-tabs {
+    justify-content: center;
+    li.nav-item {
+      display: flex;
+      .nav-link {
+        color: #000;
+        border-bottom: 2px solid transparent;
+        border-radius: 0;
+        font-size: 18px;
+
+        &.active {
+          color: #000;
+          background-color: transparent;
+          border-bottom: 2px solid $primary;
+        }
+      }
+    }
+  }
   section {
     padding: 30px 15px 30px;
 
@@ -10,24 +28,7 @@
       margin-top: 0;
     }
 
-    #faq-tabs {
-      justify-content: center;
-      li.nav-item {
-        display: flex;
-        .nav-link {
-          color: #000;
-          border-bottom: 2px solid transparent;
-          border-radius: 0;
-          font-size: 18px;
-
-          &.active {
-            color: #000;
-            background-color: transparent;
-            border-bottom: 2px solid $primary;
-          }
-        }
-      }
-    }
+    
     
     #faq-tab-content{
       font-size: 22px;
