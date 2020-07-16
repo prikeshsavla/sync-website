@@ -8,4 +8,40 @@
       color: #fff;
     }
   }
-}  
+
+  &.btn-outline-primary {
+    &.btn-sync {
+      padding-left: 15px;
+      padding-right: 15px;
+      min-width: 10rem;
+      font-size: 22px;
+      font-weight: 600;
+      border-radius: 8px;
+
+      i, svg {
+        color: $primary;
+        fill: $primary !important;
+        transition: all 0.15s ease-in-out;
+      }
+
+
+    }
+
+    @include hover {
+      i, svg {
+        color: #fff;
+        fill: #fff !important;
+        transition: all 0.15s ease-in-out;
+      }
+    }
+   
+  }
+
+  #google-play-icon {
+    margin-bottom: 2px;
+  }
+
+  #apple-store-icon {
+    margin-bottom: 7px;
+  }
+}

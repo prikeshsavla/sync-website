@@ -1,0 +1,38 @@
+.faq {
+  section {
+    padding: 30px 15px 30px;
+
+    @include media-breakpoint-up(md) {
+      padding: 30px 15px 40px;
+    }
+
+    hr {
+      margin-top: 0;
+    }
+
+    #faq-tabs {
+      justify-content: center;
+      li.nav-item {
+        display: flex;
+        .nav-link {
+          color: #000;
+          border-bottom: 2px solid transparent;
+          border-radius: 0;
+
+          &.active {
+            color: #000;
+            background-color: transparent;
+            border-bottom: 2px solid $primary;
+          }
+        }
+      }
+    }
+    
+    #faq-tab-content{
+      font-size: 22px;
+      line-height: 1.5em;
+    }
+  }
+
+
+}
