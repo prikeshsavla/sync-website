@@ -2,12 +2,20 @@
   .navbar-brand {
     font-size: 21px;
     font-weight: 600;
+
     .logo {
       height: 48px;
+      @include media-breakpoint-down(md) {
+        height: 35px;
+      }
     }
   }
-  .faqs-button{
+
+  .faqs-button {
     line-height: 50px;
+    @include media-breakpoint-down(md) {
+      line-height: 35px;
+    }
   }
 }
 

@@ -1,8 +1,12 @@
 .faq {
+
+
   .faq-tabs {
     justify-content: center;
+
     li.nav-item {
       display: flex;
+
       .nav-link {
         color: #000;
         border-bottom: 2px solid transparent;
@@ -17,6 +21,7 @@
       }
     }
   }
+
   section {
     padding: 30px 15px 30px;
 
@@ -27,12 +32,18 @@
     hr {
       margin-top: 0;
     }
-
     
-    
-    #faq-tab-content{
+    #faq-tab-content {
       font-size: 22px;
       line-height: 1.5em;
+
+      .tab-pane {
+        h2 {
+          @include media-breakpoint-down(md) {
+            font-size: 35px;
+          }
+        }
+      }
     }
   }
 
