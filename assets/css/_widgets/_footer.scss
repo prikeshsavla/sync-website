@@ -1,13 +1,45 @@
-footer.footer{
-  svg{
+footer.footer {
+  &.bg-dark {
+    background-color: #162B2B !important;
+  }
+
+  @include media-breakpoint-down(lg) {
+    text-align: center;
+  }
+
+  svg {
     fill: $primary;
   }
-  a.app-links{
+
+  .heading {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  ul {
+    li {
+      margin-bottom: 5px;
+
+      a {
+        color: #ddd;
+        font-size: 18px;
+        display: block;
+        line-height: 1.6em;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  a.app-links {
     justify-content: space-around;
-    img{
+
+    img {
       justify-content: space-around;
       width: 45%;
-    }  
+    }
   }
-  
+
 }

@@ -31,3 +31,10 @@ p {
 body {
   font-size: 22px;
 }
+
+a {
+  @include hover() {
+    color: lighten($primary, 10%);
+    text-decoration: none;
+  }
+}
