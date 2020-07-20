@@ -24,7 +24,7 @@
     <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="faq">
+<body class="faq" data-spy="scroll" data-target="#faq-scroll-spy" data-offset="1">
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light static-top shadow-sm p-0">
     <div class="container">
@@ -84,12 +84,6 @@
 
                             </a>
                         </p>
-                        <p>
-                            <a target="_blank" href="https://bit.ly/syncappbusiness" class="btn btn-outline-primary btn-sync"> <svg xmlns="http://www.w3.org/2000/svg" width="20.058" height="14.892" viewBox="0 0 20.058 14.892">
-                                <path id="icons8-play-button_1_" data-name="icons8-play-button (1)" d="M22.5,11.559a2.644,2.644,0,0,0-2.094-2A41.406,41.406,0,0,0,12.958,9a42.016,42.016,0,0,0-7.491.558,2.583,2.583,0,0,0-2.094,2A30.533,30.533,0,0,0,3,16.446a25.327,25.327,0,0,0,.418,4.886,2.649,2.649,0,0,0,2.094,2,42.808,42.808,0,0,0,7.493.558,42.808,42.808,0,0,0,7.493-.558,2.585,2.585,0,0,0,2.094-2,35.7,35.7,0,0,0,.465-4.886A32.564,32.564,0,0,0,22.5,11.559ZM10.446,19.7V13.188l5.677,3.258Z" transform="translate(-3 -9)" />
-                            </svg>
-                                Learn More</a>
-                        </p>
                     </div>
                 </div>
             </div>
@@ -97,643 +91,608 @@
         </div>
     </div>
 </section>
-<div class="bg-light table-responsive d-block pt-3 d-sm-none">
-    <ul class="nav nav-pills faq-tabs" role="tablist" style="    width: 930px;">
-        <li class="nav-item" role="presentation">
-            <a class="nav-link active" data-toggle="tab" href="#setting-up" role="tab"
-               aria-controls="setting-up" aria-selected="true">Setting Business</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" data-toggle="tab" href="#business-profile"
-               role="tab"
-               aria-controls="business-profile" aria-selected="false">Business Profile</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" data-toggle="tab" href="#privacy" role="tab"
-               aria-controls="privacy" aria-selected="false">Privacy</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" data-toggle="tab" href="#deliveries" role="tab"
-               aria-controls="deliveries" aria-selected="false">Deliveries</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" data-toggle="tab" href="#payments" role="tab"
-               aria-controls="payments" aria-selected="false">Payments</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" data-toggle="tab" href="#buy-tab" role="tab"
-               aria-controls="buy-tab" aria-selected="false">Buy Tab</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" data-toggle="tab" href="#miscellaneous" role="tab"
-               aria-controls="miscellaneous" aria-selected="false">Miscellaneous</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" data-toggle="tab" href="#orders" role="tab"
-               aria-controls="orders" aria-selected="false">Orders</a>
-        </li>
 
 
-    </ul>
-</div>
-<hr class="m-0 d-block d-sm-none">
 <section class=" bg-light">
-    <div class="container d-none d-sm-block">
-        <div class="row">
-            <div class="col-sm-12">
-                <ul class="nav nav-pills faq-tabs" id="faq-tabs" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" data-toggle="tab" href="#setting-up" role="tab"
-                           aria-controls="setting-up" aria-selected="true">Setting Business</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-toggle="tab" href="#business-profile"
-                           role="tab"
-                           aria-controls="business-profile" aria-selected="false">Business Profile</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-toggle="tab" href="#privacy" role="tab"
-                           aria-controls="privacy" aria-selected="false">Privacy</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-toggle="tab" href="#deliveries" role="tab"
-                           aria-controls="deliveries" aria-selected="false">Deliveries</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-toggle="tab" href="#payments" role="tab"
-                           aria-controls="payments" aria-selected="false">Payments</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-toggle="tab" href="#buy-tab" role="tab"
-                           aria-controls="buy-tab" aria-selected="false">Buy Tab</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-toggle="tab" href="#miscellaneous" role="tab"
-                           aria-controls="miscellaneous" aria-selected="false">Miscellaneous</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-toggle="tab" href="#orders" role="tab"
-                           aria-controls="orders" aria-selected="false">Orders</a>
-                    </li>
-
-
-                </ul>
-            </div>
-        </div>
-    </div>
-    <hr class=" d-none d-sm-block">
     <div class="container">
-        <div class="row">
+        <div class="row" id="faq-tab-content">
             <div class="col-sm-10 offset-sm-1">
+                <div class="" id="setting-up"
+                     aria-labelledby="setting-up-tab">
+                    <h2 class="text-center my-4 pb-md-4">Setting up a Business</h2>
+                    <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
+                    <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
+                    <!--                             alt="">-->
+                    <span class="h4 d-inline-block mb-4">Click on Create a business</span>
+                    <p>
+                        <strong>What’s the name of your business?</strong> <br>
+                        Fill in a name. This can be changed later.</p>
+                    <p>
 
-
-                <div class="tab-content" id="faq-tab-content">
-                    <div class="tab-pane fade show active" id="setting-up" role="tabpanel"
-                         aria-labelledby="setting-up-tab">
-                        <h2 class="text-center my-4 pb-md-4">Setting up a Business</h2>
-                        <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
-                        <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
-                        <!--                             alt="">-->
-                        <span class="h4 d-inline-block mb-4">Click on Create a business</span>
-                        <p>
-                            <strong>What’s the name of your business?</strong> <br>
-                            Fill in a name. This can be changed later.</p>
-                        <p>
-
-                            <strong>What modules do you want?</strong> <br>
-                            There are three key modules for a business
-                            <br>
-                            BUY - This is where you will showcase
-                            your products and services
-                            <br>
-                            CHAT - This is group chat where you can engage with your community. This is
-                            important if you’re upgrading from a WhatsApp group
-                            <br>
-                            FEED - Communicate important updates with your customers. This is an admin-only
-                            section for posting.</p>
-                        <p>
-                            <span class="text-muted">BUY is mandatory. CHAT and FEED are optional.</span>
-                        </p>
-                        <p>
-                            <strong>What do you want to name your first catalog?</strong> <br>
-                            Give your catalog a name. Don’t worry you can change this later.</p>
-                        <p>
-
-                            <strong>How do you handle fulfillment?</strong> <br>
-                            Enable Delivery: This means that your customers can ask for delivery from you <br>
-                            Enable Pickup: This means that your customers can pickup from your business
-                            address<br>
-                            If you enable Pickup, please provide the Pickup Address to move ahead
-                        </p>
-                        <p>
-                            <strong>What’s your name and mobile number?</strong> <br>
-                            Name: Fill in your personal name or the name of the person who might manage the
-                            app<br>
-                            Phone number: Enter your 10 digit mobile number and press Go! <br><br>
-                            <span class="text-muted">After you receive the OTP, your business is created. Congrats!</span>
-
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="business-profile" role="tabpanel"
-                         aria-labelledby="business -profile-tab">
-
-
-                        <h2 class="text-center my-4 pb-md-4">Business Profile</h2>
-
-
-                        <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
-                        <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
-                        <!--                             alt="">-->
-
-                        <ol class="pl-3">
-                            <li>
-                                Click on your business name on the top left hand
-                                corner inside your app
-
-                            </li>
-                            <li>
-                                Click the edit (pencil) icon next to number of
-                                members
-                            </li>
-                        </ol>
-                        <h4 class="mb-4">Your Business</h4>
-                        <ul class="list-unstyled">
-                            <li>
-                                <strong>Add a photo</strong>
-                            </li>
-                            <li>
-                                Click on + and give access to images
-                            </li>
-                            <li>
-                                Select your business logo
-                            </li>
-                            <li>
-                                Tip: Upload a picture in the ratio of 1:2, width:height for best results
-                            </li>
-                        </ul>
-                        <p>
-                            <strong>Business name</strong> <br>
-                            This is what is visible to your users. You can change your business name if you want to.
-                        </p>
-                        <p>
-                            <strong>Mobile number</strong> <br>
-                            This is the number you entered while signing-up. This is the number people will reach
-                            out to when they have queries.
-                        </p>
-                        <p>
-
-                            <strong>GST Number</strong> <br>
-                            Enter your 15 digit GSTIN. This is not mandatory. This is only if you want to showcase
-                            your taxation number in PDF order summary.
-                        </p>
-                        <p>
-                            <strong>Welcome Message</strong> <br>
-                            Set a message to welcome your members when they join your app. They will see this the
-                            moment they come on your app for the first time.
-                        </p>
-                        <p>
-                            <strong>Success Message</strong><br>
-                            Use this message to communicate with customers right after they’ve placed an order. For
-                            eg: Thank you for placing your order, we hope to serve you again. Your order number is
-                            @order_number
-                            <br>
-                            Tip: @order_number generates a random order number for you to track each orders.
-                        </p>
-                        <p>
-
-                            <strong>Pickup Address</strong> <br>
-                            If you have enabled pickup in your fulfilment options, then this is the address where
-                            your customers will pick up from.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
-                        <h2 class="text-center my-4 pb-md-4">Privacy</h2>
-
-                        <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
-                        <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
-                        <!--                             alt="">-->
-                        <p>
-                            <strong>Hide Customer Address</strong><br>
-                            Click on this to ensure that the full address is not visible to other members of your group.
-                            <br>
-                            Why is this here? In a lot of apartment use-cases, businesses prefer to showcase addresses
-                            since it is only within the community.
-
-                        </p>
-                        <p>
-                            Tip: If you run a business that is not specific to any apartment, you should hide customer
-                            address
-                        </p>
-                    </div>
-
-                    <div class="tab-pane fade" id="deliveries" role="tabpanel" aria-labelledby="deliveries-tab">
-                        <h2 class="text-center my-4 pb-md-4">Deliveries</h2>
-
-                        <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
-                        <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
-                        <!--                             alt="">-->
-                        <p>
-                            <strong>Enable Delivery</strong><br>
-                            If this is enabled, the user will have to enter their address at checkout once. </p>
-                        <p>
-                            <strong>Enable Pickup</strong> <br>
-                            If this is enabled, the user will see your business address where they need to pick up
-                            goods
-                            from.</p>
-
-
-                    </div>
-                    <div class="tab-pane fade " id="payments" role="tabpanel" aria-labelledby="payments-tab">
-
-
-                        <h2 class="text-center my-4 pb-md-4">Payments</h2>
-
-                        <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
-                        <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
-                        <!--                             alt="">-->
-
-
-                        <strong>UPI handle or payment url</strong> <br>
-                        Enter the UPI handle where you want to receive payments to. You can use any UPI handle here.
-                        Alternatively, in case you use other payment provider, you can add their payment links here.
-                        </p><p>
-                        UPI is free and has the benefit of instant transfer.
-                    </p>
-                        <p>
-                            Pricing for other methods like Paytm for business or Instamojo is between you and the
-                            provider,
-                            at the time of sign-up.
-                        </p>
-                        <p>
-                            Important: When you activate this method, the customer journey is as follows
-
-                        </p>
-
-                        <ol class="pl-3">
-                            <li>Customer adds items to cart and swipes to place order</li>
-                            <li>Customer comes to ORDERS section and clicks on MAKE PAYMENT</li>
-                            <li>This opens up the available UPI apps through which they make payment</li>
-                            <li>They click on MARK PAID and confirm payment
-                            </li>
-                        </ol>
-                        <p>
-                            UPI transactions happen outside the app and hence customers need to manually confirm
-                            payment.
-
-                        </p>
-                        <p>
-                            <strong>Razorpay</strong><br>
-                            This module was built for businesses that are scaling and need a fool-proof
-                            reconciliation
-                            system. For this you need to:
-                        </p>
-
-                        <ul style="list-style: square" class="pl-3">
-                            <li>
-                                First, create an account with ​<a
-                                    href="https://razorpay.com/docs/payment-gateway/dashboard-guide/sign-up/">Razorpay
-                                and complete KYC</a>
-                            </li>
-                            <li>
-                                Once the documents are reviewed and approved Navigate to settings ​→ <a
-                                    href="https://razorpay.com/docs/api/">​API Keys​</a> ​→ ​
-                                Generate Key
-                            </li>
-                            <li>
-                                Here you will see two keys
-                                <ul>
-                                    <li>
-                                        Razorpay Key id
-                                    </li>
-                                    <li>
-                                        Secret Key (be sure to save this since it shows up only
-                                        once and need to be regenerated again if you haven’t noted it)
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                Enter Razorpay key and Razorpay secret, and you’re ready to integrate seamless
-                                payments
-                                for your business
-                            </li>
-                        </ul>
+                        <strong>What modules do you want?</strong> <br>
+                        There are three key modules for a business
                         <br>
-                        <p>
-                            <strong>Key Modules</strong> <br>
-                            Modules make the core of your app-experience. Currently there are three key modules around
-                            which you build your app
-                            <br>
-                            BUY - This is the tab where your catalog comes up.
-                            <br>
-                            CHAT - Essentially group chat
-                            <br>
-                            FEED - Business first communication where members can comment only on business posts
-                            <br>
-                            You can switch their positions to match your business needs and even switch off chat and
-                            feed
-                            and only keep BUY too.
+                        BUY - This is where you will showcase
+                        your products and services
+                        <br>
+                        CHAT - This is group chat where you can engage with your community. This is
+                        important if you’re upgrading from a WhatsApp group
+                        <br>
+                        FEED - Communicate important updates with your customers. This is an admin-only
+                        section for posting.</p>
+                    <p>
+                        <span class="text-muted">BUY is mandatory. CHAT and FEED are optional.</span>
+                    </p>
+                    <p>
+                        <strong>What do you want to name your first catalog?</strong> <br>
+                        Give your catalog a name. Don’t worry you can change this later.</p>
+                    <p>
 
-                            <br>
-                            You can switch their positions to match your business needs and even switch off chat and
-                            feed
-                            and only keep BUY too.
+                        <strong>How do you handle fulfillment?</strong> <br>
+                        Enable Delivery: This means that your customers can ask for delivery from you <br>
+                        Enable Pickup: This means that your customers can pickup from your business
+                        address<br>
+                        If you enable Pickup, please provide the Pickup Address to move ahead
+                    </p>
+                    <p>
+                        <strong>What’s your name and mobile number?</strong> <br>
+                        Name: Fill in your personal name or the name of the person who might manage the
+                        app<br>
+                        Phone number: Enter your 10 digit mobile number and press Go! <br><br>
+                        <span class="text-muted">After you receive the OTP, your business is created. Congrats!</span>
 
-                        </p>
-                        <p>
-                            <strong>Order Summaries</strong><br>
-                            Two kinds of summaries to view the orders under. <br>
-                            By Date lines up orders from now to start date of catalog with latest orders first. <br>
-                            By Address sorts orders as per address shared by customers at time of checkout, from A
-                            to Z.
-                        </p>
-                        <p>
-                            <strong>Update Business</strong> <br>
-                            Clicking on this saves your changes and updates it.
-                    </div>
-                    <div class="tab-pane fade " id="buy-tab" role="tabpanel" aria-labelledby="buy-tab-tab">
-
-                        <h2 class="text-center my-4 pb-md-4">Buy Tab</h2>
-
-                        <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
-                        <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
-                        <!--                             alt="">-->
-
-                        <strong class="mb-4 d-block">CATALOG</strong>
-                        <p>
-                            <strong>Add catalog</strong> <br>
-                            Click on ADD or SELECT CATALOG <br>
-                            Click on + ADD CATALOG
-                        </p>
-                        <p>
-                            <strong>Catalog Name</strong> <br>
-                            Enter a name that suits the list of items. For eg: Fruit & Grocery, Takeaway Menu.
-                        </p>
-                        <p>
-                            <strong>Catalog Description</strong> <br>
-
-                            Describe your catalog. What should people expect out of this? Are there any important
-                            things
-                            like minimum order or estimated time of delivery that you want to share?
-                        </p>
-                        <p>
-                            Click on ADD CATALOG and it gets created.
-                        </p>
-                        <p>
-                            Add items <br>
-
-                            Click on + Add an item <br>
-                            Items have the following fields: <br>
-                        <ul style="list-style: square">
-                            <li>Click on ​+​ to add a picture</li>
-                            <li>Mention the <strong><i>​Item name​</i></strong>. Tip: Add the qty for clarity</li>
-                            <li>Mention the <strong>​item price</strong></li>
-                            <li><strong>Category name​</strong> under which this item belongs.<br> If you leave this
-                                blank product will be added without category
-                            </li>
-                        </ul>
-                        And you’ve added your first product! Congratulations.
-                        </p>
-                        <p>
-                            <strong>Edit catalog item</strong> <br>
-                            Long press on the item you just added and it opens up Edit catalog item. Here you can
-                            <br>
-                            Edit the details you provided during <strong>​Add an item</strong>. <br>
-                            Add advanced features to your product like: Description for your item that customers can
-                            read
-                            about under <strong>​Item description</strong>.
-                        </p>
-                        <strong>Pricing</strong> <br>
-                        <p>Final Price <br>
-                            This is what the customer pays when they add the items to cart and place an order </p>
-                        <p>
-                            Pre-discount price <br>
-                            This is the slashed price where people see the original price. This helps customers
-                            visualise the savings you provide.
-                        </p>
-                        <p>
-                            <strong>Scheduling</strong> <br>
-                            This will let your customers pick a preferred time for fulfillment
-                        </p>
-                        <p>
-                            <strong>Sorting</strong> <br>
-                            Want an item to be on top? Just put the serial number as 1. This can help you showcase your
-                            most important products first. By default the sorting of items will be done in the order you
-                            added them.
-                        </p>
-                        <p>
-
-                            <strong>CATEGORIES</strong> <br>
-
-                            Edit category <br>
-                            Long press any category to Edit the same. <br>
-                            You can edit the <strong>​Category name</strong> <br>
-                            You can change the order of category by mentioning <strong>​Serial number </strong> like
-                            item sorting. The
-                            default
-                            sorting of a category is A-Z.
-                            <br>
-                            Enable <strong>​Expanded​</strong> category if you want people to see items in your category
-                            as soon as
-                            they
-                            land. The default category is set to closed which means that customers will click on the
-                            category to expand.
-
-                        </p>
-                        <p>
-                            <strong>Locking</strong> <br>
-                            Locking blocks customers from placing further orders. This can be done with an
-                            <strong>​item-level lock</strong>
-                            ​which you can enforce in situations like out-of-stock and cut-off time.
-                        </p>
-                        <p>
-                            <strong>Catalog-level lock</strong> ​blocks users from placing orders on the entire catalog.
-
-                        </p>
-                        <p>
-                            <strong>BUY MENU</strong> <br>
-                            Find catalog, order and payment level setting here.
-                        </p>
-                        <p>
-                            <strong>Manage catalogs</strong> <br>
-                            Add a new catalog or use your existing catalog.
-                        </p>
-                        <p>
-                            <strong>Publish catalog</strong> <br>
-                            NOT LIVE means that your customers cannot see this catalog. Click on Publish catalog and
-                            confirm to make it LIVE.
-                        </p>
-                        <p>
-                            <strong>EDIT CATALOG</strong> <br>
-                            Click on the menu icon before your catalog name and click on Edit catalog. You will find
-                            advanced features to ensure you have the perfect catalog.
-                        </p>
-                        <p>
-                            <strong>Info</strong> <br>
-                            Add upto 5 pictures to your catalog by pressing on ​+ <br>
-                            <strong>Catalog name and Catalog description</strong> ​were added at the time of creating a
-                            catalog. You
-                            can
-                            edit them here if you want.
-                        </p>
-                        <p>
-                            <strong>
-                                Payments
-                            </strong>
-                            <br>
-
-                            Confirm before pay <br>
-                            If you click this, this will allow your customers to pay only after you confirm their
-                            orders. If this is off, customers will get an option to pay you the moment they place an
-                            order, if payments are ON for the catalog.
-                        </p>
-                        <p>
-                            <strong>INVOICE </strong> <br>
+                    </p>
+                </div>
+                <div class="" id="business-profile"
+                     aria-labelledby="business -profile-tab">
 
 
-                            Footnote <br>
-                            Add a message that you want to include in your PDF downloads for your customers. This
-                            could
-                            include basic terms and conditions or any custom message.
-                        </p>
-                        <p>
-                            <strong>CHARGES</strong> <br>
-                            Fixed charges per order <br>
-                            This is where you can add your delivery fees if it is applicable for your customers.
-                            This
-                            will be presented to the customer at the time of the checkout.
-                        </p>
-                        <p>
-
-                            <strong>Minimum order value</strong> <br>
-                            Fix the amount at or above which you will accept orders. If the order is less than
-                            minimum
-                            order value, customers can not place their orders.
+                    <h2 class="text-center my-4 pb-md-4">Business Profile</h2>
 
 
-                    </div>
-                    <div class="tab-pane fade " id="miscellaneous" role="tabpanel"
-                         aria-labelledby="miscellaneous-tab">
+                    <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
+                    <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
+                    <!--                             alt="">-->
 
+                    <ol class="pl-3">
+                        <li>
+                            Click on your business name on the top left hand
+                            corner inside your app
 
-                        <h2 class="text-center my-4 pb-md-4">Miscellaneous</h2>
+                        </li>
+                        <li>
+                            Click the edit (pencil) icon next to number of
+                            members
+                        </li>
+                    </ol>
+                    <h4 class="mb-4">Your Business</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <strong>Add a photo</strong>
+                        </li>
+                        <li>
+                            Click on + and give access to images
+                        </li>
+                        <li>
+                            Select your business logo
+                        </li>
+                        <li>
+                            Tip: Upload a picture in the ratio of 1:2, width:height for best results
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Business name</strong> <br>
+                        This is what is visible to your users. You can change your business name if you want
+                        to.
+                    </p>
+                    <p>
+                        <strong>Mobile number</strong> <br>
+                        This is the number you entered while signing-up. This is the number people will
+                        reach
+                        out to when they have queries.
+                    </p>
+                    <p>
 
-                        <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
-                        <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
-                        <!--                             alt="">-->
+                        <strong>GST Number</strong> <br>
+                        Enter your 15 digit GSTIN. This is not mandatory. This is only if you want to
+                        showcase
+                        your taxation number in PDF order summary.
+                    </p>
+                    <p>
+                        <strong>Welcome Message</strong> <br>
+                        Set a message to welcome your members when they join your app. They will see this
+                        the
+                        moment they come on your app for the first time.
+                    </p>
+                    <p>
+                        <strong>Success Message</strong><br>
+                        Use this message to communicate with customers right after they’ve placed an order.
+                        For
+                        eg: Thank you for placing your order, we hope to serve you again. Your order number
+                        is
+                        @order_number
+                        <br>
+                        Tip: @order_number generates a random order number for you to track each orders.
+                    </p>
+                    <p>
 
-                        <p>
-                            <strong>ADD your own items</strong> <br>
-                            This will allow your customers to create a free list of items that are not in the
-                            catalog.
-                            The availability and payment for these items will have to be done offline. This is
-                            especially useful if you have a long list of items
+                        <strong>Pickup Address</strong> <br>
+                        If you have enabled pickup in your fulfilment options, then this is the address
+                        where
+                        your customers will pick up from.
+                    </p>
+                </div>
+                <div class="" id="privacy" aria-labelledby="privacy-tab">
+                    <h2 class="text-center my-4 pb-md-4">Privacy</h2>
 
-                        </p>
-                        <p>
-                            <strong>HIDE locked items</strong> <br>
-                            This will hide locked items from the catalog. You may want to use this when you have a
-                            significant number of items in your catalog locked. It will help customers see only what
-                            is
-                            available and what you’re accepting orders for.
-                        </p>
-                        <p>
-                            <strong>ALLOW cancellations</strong> <br>
-                            This will let customers cancel unconfirmed and unpaid orders.
-                        </p>
-                        <p>
-                            <strong>SHOW orders count</strong> <br>
-                            This will show the orders count below every catalog item. This helps customers find
-                            social
-                            proof. Please note that order count is hidden if you have item descriptions.
-                        </p>
-                        <p>
-                            <strong>Preview Catalog</strong> <br>
-                            Click here to view your catalog as a member of your business. Another important feature
-                            of
-                            Preview catalog is that you can place an order on behalf of your members too.
-                        </p>
-                        <p>
-                            <strong>Bulk Upload Items</strong> <br>
-                            If you have lots of items then Bulk upload is your friend. <br>
-                            First, Download .xlsx template. This template has 6 column names. <br>
-                            <i>Name, Price, Category name, Description, Image url, Pre-discount price</i> <br>
+                    <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
+                    <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
+                    <!--                             alt="">-->
+                    <p>
+                        <strong>Hide Customer Address</strong><br>
+                        Click on this to ensure that the full address is not visible to other members of
+                        your group.
+                        <br>
+                        Why is this here? In a lot of apartment use-cases, businesses prefer to showcase
+                        addresses
+                        since it is only within the community.
 
-                        </p>
-                        <p>
-                            Note: Image url needs to be a publicly accessible link.
-                        </p>
-                        <p>
-                            Once you’ve put all the items as per the format above click on PICK A FILE and upload
-                            the
-                            file. Confirm the column name in Pick mappings and click on Send.
-                        </p>
-                        <p>
-                            Sit back and relax as Sync does the heavy lifting. Get tens of thousands of items listed
-                            in
-                            minutes with the super-easy bulk upload items feature.
-                        </p>
-                        <p>
-                            <strong>Duplicate catalog</strong> <br>
-                            Create a duplicate of your catalog with this option. This is different from selecting a
-                            previous catalog from Manage catalogs as this resets all the orders and starts fresh.
-                        </p>
-
-                    </div>
-                    <div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">
-
-
-                        <h2 class="text-center my-4 pb-md-4">Orders</h2>
-
-                        <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
-                        <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
-                        <!--                             alt="">-->
-
-                        <p>
-                            <strong>
-                                View Summary
-                            </strong>
-                            <br>
-                            This gives you a list of all your orders. You can change this view from date to address
-                            too,
-                            where it will sort it from A to Z.
-
-                        </p>
-                        <p>
-                            An individual order consists of 3 sections <br>
-                            General details: Customer name, phone number, PDF, Call <br>
-                            Order details: Item name, quantity, total and fulfillment preference. <br>
-                            Fulfillment status: Ordered, confirmed, paid, delivered and date of order + order number
-                        </p>
-                        <p>
-                            The PDF next to the individual order can be used as an invoice or a record to be sent to
-                            the
-                            customer. The call icon connects you to the customer incase of any queries.
-                        </p>
-                        <p>
-                            You can download the summary as a PDF or as an excel sheet by customers, apartment,
-                            order or
-                            summary.
-                        </p>
-
-                        <p>
-                            <strong>Filter</strong> <br>
-                            You can filter your order summary by Payment, Confirmations, and Delivery status.
-                            Filtering
-                            can also be done via dates.
-                            <br>
-                            You can have multi-level filters too. For eg: Those who have paid and confirmed but not
-                            yet
-                            delivered in between selected dates.
-                        </p>
-                    </div>
-
+                    </p>
+                    <p>
+                        Tip: If you run a business that is not specific to any apartment, you should hide
+                        customer
+                        address
+                    </p>
                 </div>
 
+                <div class="" id="deliveries" aria-labelledby="deliveries-tab">
+                    <h2 class="text-center my-4 pb-md-4">Deliveries</h2>
+
+                    <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
+                    <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
+                    <!--                             alt="">-->
+                    <p>
+                        <strong>Enable Delivery</strong><br>
+                        If this is enabled, the user will have to enter their address at checkout once. </p>
+                    <p>
+                        <strong>Enable Pickup</strong> <br>
+                        If this is enabled, the user will see your business address where they need to pick
+                        up
+                        goods
+                        from.</p>
+
+
+                </div>
+                <div class="" id="payments" aria-labelledby="payments-tab">
+
+
+                    <h2 class="text-center my-4 pb-md-4">Payments</h2>
+
+                    <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
+                    <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
+                    <!--                             alt="">-->
+
+
+                    <strong>UPI handle or payment url</strong> <br>
+                    Enter the UPI handle where you want to receive payments to. You can use any UPI handle
+                    here.
+                    Alternatively, in case you use other payment provider, you can add their payment links
+                    here.
+                    </p><p>
+                    UPI is free and has the benefit of instant transfer.
+                </p>
+                    <p>
+                        Pricing for other methods like Paytm for business or Instamojo is between you and
+                        the
+                        provider,
+                        at the time of sign-up.
+                    </p>
+                    <p>
+                        Important: When you activate this method, the customer journey is as follows
+
+                    </p>
+
+                    <ol class="pl-3">
+                        <li>Customer adds items to cart and swipes to place order</li>
+                        <li>Customer comes to ORDERS section and clicks on MAKE PAYMENT</li>
+                        <li>This opens up the available UPI apps through which they make payment</li>
+                        <li>They click on MARK PAID and confirm payment
+                        </li>
+                    </ol>
+                    <p>
+                        UPI transactions happen outside the app and hence customers need to manually confirm
+                        payment.
+
+                    </p>
+                    <p>
+                        <strong>Razorpay</strong><br>
+                        This module was built for businesses that are scaling and need a fool-proof
+                        reconciliation
+                        system. For this you need to:
+                    </p>
+
+                    <ul style="list-style: square" class="pl-3">
+                        <li>
+                            First, create an account with ​<a
+                                href="https://razorpay.com/docs/payment-gateway/dashboard-guide/sign-up/">Razorpay
+                            and complete KYC</a>
+                        </li>
+                        <li>
+                            Once the documents are reviewed and approved Navigate to settings ​→ <a
+                                href="https://razorpay.com/docs/api/">​API Keys​</a> ​→ ​
+                            Generate Key
+                        </li>
+                        <li>
+                            Here you will see two keys
+                            <ul>
+                                <li>
+                                    Razorpay Key id
+                                </li>
+                                <li>
+                                    Secret Key (be sure to save this since it shows up only
+                                    once and need to be regenerated again if you haven’t noted it)
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            Enter Razorpay key and Razorpay secret, and you’re ready to integrate seamless
+                            payments
+                            for your business
+                        </li>
+                    </ul>
+                    <br>
+                    <p>
+                        <strong>Key Modules</strong> <br>
+                        Modules make the core of your app-experience. Currently there are three key modules
+                        around
+                        which you build your app
+                        <br>
+                        BUY - This is the tab where your catalog comes up.
+                        <br>
+                        CHAT - Essentially group chat
+                        <br>
+                        FEED - Business first communication where members can comment only on business posts
+                        <br>
+                        You can switch their positions to match your business needs and even switch off chat
+                        and
+                        feed
+                        and only keep BUY too.
+
+                        <br>
+                        You can switch their positions to match your business needs and even switch off chat
+                        and
+                        feed
+                        and only keep BUY too.
+
+                    </p>
+                    <p>
+                        <strong>Order Summaries</strong><br>
+                        Two kinds of summaries to view the orders under. <br>
+                        By Date lines up orders from now to start date of catalog with latest orders first.
+                        <br>
+                        By Address sorts orders as per address shared by customers at time of checkout, from
+                        A
+                        to Z.
+                    </p>
+                    <p>
+                        <strong>Update Business</strong> <br>
+                        Clicking on this saves your changes and updates it.
+                </div>
+                <div class="" id="buy-tab" aria-labelledby="buy-tab-tab">
+
+                    <h2 class="text-center my-4 pb-md-4">Buy Tab</h2>
+
+                    <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
+                    <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
+                    <!--                             alt="">-->
+
+                    <strong class="mb-4 d-block">CATALOG</strong>
+                    <p>
+                        <strong>Add catalog</strong> <br>
+                        Click on ADD or SELECT CATALOG <br>
+                        Click on + ADD CATALOG
+                    </p>
+                    <p>
+                        <strong>Catalog Name</strong> <br>
+                        Enter a name that suits the list of items. For eg: Fruit & Grocery, Takeaway Menu.
+                    </p>
+                    <p>
+                        <strong>Catalog Description</strong> <br>
+
+                        Describe your catalog. What should people expect out of this? Are there any
+                        important
+                        things
+                        like minimum order or estimated time of delivery that you want to share?
+                    </p>
+                    <p>
+                        Click on ADD CATALOG and it gets created.
+                    </p>
+                    <p>
+                        Add items <br>
+
+                        Click on + Add an item <br>
+                        Items have the following fields: <br>
+                    <ul style="list-style: square">
+                        <li>Click on ​+​ to add a picture</li>
+                        <li>Mention the <strong><i>​Item name​</i></strong>. Tip: Add the qty for clarity
+                        </li>
+                        <li>Mention the <strong>​item price</strong></li>
+                        <li><strong>Category name​</strong> under which this item belongs.<br> If you leave
+                            this
+                            blank product will be added without category
+                        </li>
+                    </ul>
+                    And you’ve added your first product! Congratulations.
+                    </p>
+                    <p>
+                        <strong>Edit catalog item</strong> <br>
+                        Long press on the item you just added and it opens up Edit catalog item. Here you
+                        can
+                        <br>
+                        Edit the details you provided during <strong>​Add an item</strong>. <br>
+                        Add advanced features to your product like: Description for your item that customers
+                        can
+                        read
+                        about under <strong>​Item description</strong>.
+                    </p>
+                    <strong>Pricing</strong> <br>
+                    <p>Final Price <br>
+                        This is what the customer pays when they add the items to cart and place an order
+                    </p>
+                    <p>
+                        Pre-discount price <br>
+                        This is the slashed price where people see the original price. This helps customers
+                        visualise the savings you provide.
+                    </p>
+                    <p>
+                        <strong>Scheduling</strong> <br>
+                        This will let your customers pick a preferred time for fulfillment
+                    </p>
+                    <p>
+                        <strong>Sorting</strong> <br>
+                        Want an item to be on top? Just put the serial number as 1. This can help you
+                        showcase your
+                        most important products first. By default the sorting of items will be done in the
+                        order you
+                        added them.
+                    </p>
+                    <p>
+
+                        <strong>CATEGORIES</strong> <br>
+
+                        Edit category <br>
+                        Long press any category to Edit the same. <br>
+                        You can edit the <strong>​Category name</strong> <br>
+                        You can change the order of category by mentioning <strong>​Serial number </strong>
+                        like
+                        item sorting. The
+                        default
+                        sorting of a category is A-Z.
+                        <br>
+                        Enable <strong>​Expanded​</strong> category if you want people to see items in your
+                        category
+                        as soon as
+                        they
+                        land. The default category is set to closed which means that customers will click on
+                        the
+                        category to expand.
+
+                    </p>
+                    <p>
+                        <strong>Locking</strong> <br>
+                        Locking blocks customers from placing further orders. This can be done with an
+                        <strong>​item-level lock</strong>
+                        ​which you can enforce in situations like out-of-stock and cut-off time.
+                    </p>
+                    <p>
+                        <strong>Catalog-level lock</strong> ​blocks users from placing orders on the entire
+                        catalog.
+
+                    </p>
+                    <p>
+                        <strong>BUY MENU</strong> <br>
+                        Find catalog, order and payment level setting here.
+                    </p>
+                    <p>
+                        <strong>Manage catalogs</strong> <br>
+                        Add a new catalog or use your existing catalog.
+                    </p>
+                    <p>
+                        <strong>Publish catalog</strong> <br>
+                        NOT LIVE means that your customers cannot see this catalog. Click on Publish catalog
+                        and
+                        confirm to make it LIVE.
+                    </p>
+                    <p>
+                        <strong>EDIT CATALOG</strong> <br>
+                        Click on the menu icon before your catalog name and click on Edit catalog. You will
+                        find
+                        advanced features to ensure you have the perfect catalog.
+                    </p>
+                    <p>
+                        <strong>Info</strong> <br>
+                        Add upto 5 pictures to your catalog by pressing on ​+ <br>
+                        <strong>Catalog name and Catalog description</strong> ​were added at the time of
+                        creating a
+                        catalog. You
+                        can
+                        edit them here if you want.
+                    </p>
+                    <p>
+                        <strong>
+                            Payments
+                        </strong>
+                        <br>
+
+                        Confirm before pay <br>
+                        If you click this, this will allow your customers to pay only after you confirm
+                        their
+                        orders. If this is off, customers will get an option to pay you the moment they
+                        place an
+                        order, if payments are ON for the catalog.
+                    </p>
+                    <p>
+                        <strong>INVOICE </strong> <br>
+
+
+                        Footnote <br>
+                        Add a message that you want to include in your PDF downloads for your customers.
+                        This
+                        could
+                        include basic terms and conditions or any custom message.
+                    </p>
+                    <p>
+                        <strong>CHARGES</strong> <br>
+                        Fixed charges per order <br>
+                        This is where you can add your delivery fees if it is applicable for your customers.
+                        This
+                        will be presented to the customer at the time of the checkout.
+                    </p>
+                    <p>
+
+                        <strong>Minimum order value</strong> <br>
+                        Fix the amount at or above which you will accept orders. If the order is less than
+                        minimum
+                        order value, customers can not place their orders.
+
+
+                </div>
+                <div class="" id="miscellaneous"
+                     aria-labelledby="miscellaneous-tab">
+
+
+                    <h2 class="text-center my-4 pb-md-4">Miscellaneous</h2>
+
+                    <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
+                    <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
+                    <!--                             alt="">-->
+
+                    <p>
+                        <strong>ADD your own items</strong> <br>
+                        This will allow your customers to create a free list of items that are not in the
+                        catalog.
+                        The availability and payment for these items will have to be done offline. This is
+                        especially useful if you have a long list of items
+
+                    </p>
+                    <p>
+                        <strong>HIDE locked items</strong> <br>
+                        This will hide locked items from the catalog. You may want to use this when you have
+                        a
+                        significant number of items in your catalog locked. It will help customers see only
+                        what
+                        is
+                        available and what you’re accepting orders for.
+                    </p>
+                    <p>
+                        <strong>ALLOW cancellations</strong> <br>
+                        This will let customers cancel unconfirmed and unpaid orders.
+                    </p>
+                    <p>
+                        <strong>SHOW orders count</strong> <br>
+                        This will show the orders count below every catalog item. This helps customers find
+                        social
+                        proof. Please note that order count is hidden if you have item descriptions.
+                    </p>
+                    <p>
+                        <strong>Preview Catalog</strong> <br>
+                        Click here to view your catalog as a member of your business. Another important
+                        feature
+                        of
+                        Preview catalog is that you can place an order on behalf of your members too.
+                    </p>
+                    <p>
+                        <strong>Bulk Upload Items</strong> <br>
+                        If you have lots of items then Bulk upload is your friend. <br>
+                        First, Download .xlsx template. This template has 6 column names. <br>
+                        <i>Name, Price, Category name, Description, Image url, Pre-discount price</i> <br>
+
+                    </p>
+                    <p>
+                        Note: Image url needs to be a publicly accessible link.
+                    </p>
+                    <p>
+                        Once you’ve put all the items as per the format above click on PICK A FILE and
+                        upload
+                        the
+                        file. Confirm the column name in Pick mappings and click on Send.
+                    </p>
+                    <p>
+                        Sit back and relax as Sync does the heavy lifting. Get tens of thousands of items
+                        listed
+                        in
+                        minutes with the super-easy bulk upload items feature.
+                    </p>
+                    <p>
+                        <strong>Duplicate catalog</strong> <br>
+                        Create a duplicate of your catalog with this option. This is different from
+                        selecting a
+                        previous catalog from Manage catalogs as this resets all the orders and starts
+                        fresh.
+                    </p>
+
+                </div>
+                <div class="" id="orders" aria-labelledby="orders-tab">
+
+
+                    <h2 class="text-center my-4 pb-md-4">Orders</h2>
+
+                    <!--                        <img src="assets/images/pages/faq/video@2x.png"-->
+                    <!--                             class="float-md-right mx-auto mb-4 d-block d-md-inline-block px-md-5 ml-md-5"-->
+                    <!--                             alt="">-->
+
+                    <p>
+                        <strong>
+                            View Summary
+                        </strong>
+                        <br>
+                        This gives you a list of all your orders. You can change this view from date to
+                        address
+                        too,
+                        where it will sort it from A to Z.
+
+                    </p>
+                    <p>
+                        An individual order consists of 3 sections <br>
+                        General details: Customer name, phone number, PDF, Call <br>
+                        Order details: Item name, quantity, total and fulfillment preference. <br>
+                        Fulfillment status: Ordered, confirmed, paid, delivered and date of order + order
+                        number
+                    </p>
+                    <p>
+                        The PDF next to the individual order can be used as an invoice or a record to be
+                        sent to
+                        the
+                        customer. The call icon connects you to the customer incase of any queries.
+                    </p>
+                    <p>
+                        You can download the summary as a PDF or as an excel sheet by customers, apartment,
+                        order or
+                        summary.
+                    </p>
+
+                    <p>
+                        <strong>Filter</strong> <br>
+                        You can filter your order summary by Payment, Confirmations, and Delivery status.
+                        Filtering
+                        can also be done via dates.
+                        <br>
+                        You can have multi-level filters too. For eg: Those who have paid and confirmed but
+                        not
+                        yet
+                        delivered in between selected dates.
+                    </p>
+                </div>
+
+
             </div>
         </div>
     </div>
+    </div>
 </section>
+
+
 <section class="bg-dark pt-4 pb-4 px-0">
 
     <footer class="container text-center footer">
@@ -757,7 +716,7 @@
             <div class="col-sm-12 mt-3 d-none">
                 <a href="">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         x="0px" y="0px"
                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"
                          width="40px">
                         <path class="st0" d="M334.8,233l-113.1-61.9c-6.5-3.6-14.2-3.4-20.6,0.4c-6.4,3.8-10.2,10.5-10.2,17.9V312c0,7.4,3.8,14,10.1,17.8
