@@ -1,6 +1,7 @@
 var main = {
     init: function () {
         this.initSmoothScroll();
+        this.initToolTip();
     },
     initSmoothScroll: function () {
 
@@ -20,6 +21,9 @@ var main = {
             }
         });
 
+    },
+    initToolTip: function () {
+        $('[data-toggle="tooltip"]').tooltip({html: true})
     }
 };
 
