@@ -20,10 +20,15 @@ var main = {
                 $('html, body').stop().animate({scrollTop: $target.offset().top}, 1000);
             }
         });
-
     },
     initToolTip: function () {
-        $('[data-toggle="tooltip"]').tooltip({html: true})
+        if ($('[data-featured="tooltip"]').length) {
+            $('[data-featured="tooltip"]').each(function (index, value) {
+                console.log(value, index);
+            })
+        }
+
+        $('[data-toggle="tooltip"]').tooltip({html: true, placement: 'auto'})
     }
 };
 
